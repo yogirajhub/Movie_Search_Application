@@ -4,7 +4,7 @@ import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 import NotFound from "./NotFound"; // 404 page component
 
-const API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=d887f3cf";
+const API_URL = "https://www.omdbapi.com/?apikey=d60ecb78";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -18,6 +18,7 @@ function App() {
     try {
       setLoading(true);
       setError(null);
+
       const response = await fetch(`${API_URL}&s=${title}&page=${pageNum}`);
       const data = await response.json();
 
@@ -42,7 +43,6 @@ function App() {
     searchMovies("Batman", 1);
   }, []);
 
-  // Debounced input
   const handleSearchInput = (value) => {
     setSearchTerm(value);
     setPage(1);
@@ -56,7 +56,6 @@ function App() {
     }, 500);
   };
 
-  // Infinite scroll logic
   useEffect(() => {
     const handleScroll = () => {
       const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
