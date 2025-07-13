@@ -44,4 +44,4 @@ cd Movie_Search_Application
 # Author
 Made with ❤️ by Yogiraj Gautam
 
-![Movie Search App](Movie_search_Application/public/Film EScape.png)
+![Movie Search App](Movie_search_Application/public/Film_EScape.png)
