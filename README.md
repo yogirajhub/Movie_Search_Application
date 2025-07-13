@@ -1,5 +1,47 @@
-# Movie Search App using React JS
+# Movie Search Application (Film Escape)
 
-This Movie Search App is a beginner-friendly React JS project that enables users to explore movies by title. It utilizes the power of the OMDb API for movie data retrieval, offering features like searching for movies, displaying detailed information about selected films, and presenting a list of popular movies. With its responsive design, it adapts seamlessly to various screen sizes. This project serves as an excellent learning opportunity for newcomers to React and API integration, allowing them to build a functional movie search application from scratch.
+A React.js-based movie search application that allows users to search, explore, and view details about their favorite movies using the OMDb API.
 
-![Movie Search App](public/MovieSearchApp.png)
+# Live Demo
+
+👉 [View on Localhost](http://localhost:5173/)
+
+# Features
+
+- Live Movie Search (with debounced search)
+- Movie Cards** showing title, year, type, and poster
+- OMDb API** integration
+- Detailed 404 Page for invalid or empty results
+- Loading Spinner during fetch
+- Error Handling for failed API calls
+- Infinite Scroll Pagination
+- Fully Responsive Design
+- Built using functional components and React Hooks
+
+# Tech Stack
+
+- Frontend : React.js, HTML, CSS
+- API : [OMDb API](http://www.omdbapi.com/)
+- Build Tool: Vite
+- State Management: React Hooks (`useState`, `useEffect`, `useRef`)
+- Deployment: Localhost or GitHub Pages
+
+# Setup Instructions
+
+1. Clone the Repository ~ git clone https://github.com/yogirajhub/Movie_Search_Application.git
+cd Movie_Search_Application
+2. Install Dependencies ~ npm install
+3. Run Locally ~ npm run dev
+
+# Future Improvements
+1. Add movie detail page with full description
+2. Deploy to Netlify/Vercel with custom domain
+3. Add search history or watchlist using LocalStorage
+4. Toast notifications for errors
+5. Dark/light theme toggle
+6. Add unit and integration tests
+
+# Author
+Made with ❤️ by Yogiraj Gautam
+
+![Movie Search App](Movie_search_Application/public/Film EScape.png)
