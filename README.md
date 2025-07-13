@@ -44,4 +44,5 @@ cd Movie_Search_Application
 # Author
 Made with ❤️ by Yogiraj Gautam
 
-![Movie Search App](![App Screenshot](./assets/Film_Escape.png))
+![App Screenshot](./assets/Film_Escape.png)
+
