@@ -4,7 +4,9 @@ import SearchIcon from "./search.svg";
 import MovieCard from "./MovieCard";
 import NotFound from "./NotFound"; // 404 page component
 
-const API_URL = "https://www.omdbapi.com/?apikey=d60ecb78";
+// ✅ Always use HTTPS
+const API_KEY = "d60ecb78";
+const API_URL = `https://www.omdbapi.com/?apikey=${API_KEY}`;
 
 function App() {
   const [movies, setMovies] = useState([]);
